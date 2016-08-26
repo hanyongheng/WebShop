@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!-- 配置mybatis的全局属性-->
+    <settings>
+
+        <!-- 使用jdbc的generateKeys 获取数据库的自增主键值-->
+        <setting name="useGenerateKeys" value="true"/>
+
+        <!-- 使用列别名替代数据库中的列名 默认是true  select name as title form xxx-->
+        <setting name="useColumnLable" value="true"/>
+
+        <!-- 开启驼峰命名转换 数据库的下划线的列名自动转换成java中的entity中的属性名 也就是驼峰命名-->
+        <setting name="mapUnderscoreCamelCase" value="true"/>
+
+    </settings>
+
+</configuration>

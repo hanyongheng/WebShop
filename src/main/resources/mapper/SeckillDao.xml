@@ -21,4 +21,22 @@
       and
         number>0;
     </update>
+
+    <select id="queryById" resultType="Seckill" parameterType="long">
+
+        SELECT seckill_id,name,number,create_time,start_time,end_time
+        FROM seckill
+        WHERE seckill_id=#{seckillId};
+
+    </select>
+
+    <select id="queryAll" resultType="Seckill">
+
+        SELECT seckill_id,name,number,create_time,start_time,end_time
+        FROM seckill
+        ORDER BY create_time DESC
+        limit #{offset},#{limit};
+
+    </select>
+
 </mapper>

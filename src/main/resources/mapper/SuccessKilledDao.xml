@@ -25,11 +25,11 @@
               s.name "seckill.name",
               s.number "seckill.number",
               s.create_time "seckill.create_time",
-              s.start_time "seckill.start_time"
+              s.start_time "seckill.start_time",
               s.end_time "seckill.end_time"
         from success_killed sk
         inner join seckill s on sk.seckill_id=s.seckill_id
-        where sk.seckill_id=#{seckillId}
+        where sk.seckill_id=#{seckillId} and sk.user_phone=#{userPhone};
 
     </select>
 </mapper>

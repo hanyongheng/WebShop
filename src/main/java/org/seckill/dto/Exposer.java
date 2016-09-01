@@ -2,7 +2,7 @@ package org.seckill.dto;
 
 /**
  * Created by hanyh on 16/8/31.
- * 暴露秒杀地址Dto
+ * 暴露秒杀地址DTO
  */
 public class Exposer {
 
@@ -98,4 +98,15 @@ public class Exposer {
         this.seckillId = seckillId;
     }
 
+    @Override
+    public String toString() {
+        return "Exposer{" +
+                "isExposed=" + isExposed +
+                ", md5='" + md5 + '\'' +
+                ", seckillId=" + seckillId +
+                ", now=" + now +
+                ", start=" + start +
+                ", end=" + end +
+                '}';
+    }
 }

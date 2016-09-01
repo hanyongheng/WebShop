@@ -70,4 +70,14 @@ public class SeckillExecution {
         this.stateInfo = seckillStateEnum.getStateInfo();
         this.successKilled = successKilled;
     }
+
+    @Override
+    public String toString() {
+        return "SeckillExecution{" +
+                "seckillId=" + seckillId +
+                ", state=" + state +
+                ", stateInfo='" + stateInfo + '\'' +
+                ", successKilled=" + successKilled +
+                '}';
+    }
 }

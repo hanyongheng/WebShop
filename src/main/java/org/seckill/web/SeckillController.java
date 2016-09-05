@@ -1,6 +1,5 @@
 package org.seckill.web;
 
-import b.b.U;
 import org.seckill.dto.Exposer;
 import org.seckill.dto.SeckillExecution;
 import org.seckill.dto.SeckillResult;

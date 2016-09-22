@@ -30,6 +30,7 @@
         <property name="checkoutTimeout" value="1000"/>
         <!-- 当获取连接失败重试次数-->
         <property name="acquireRetryAttempts" value="2"/>
+
     </bean>
 
     <!--3. 配置mybatis的sqlSessionFactory对象-->

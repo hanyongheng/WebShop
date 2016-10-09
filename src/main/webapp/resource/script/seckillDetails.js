@@ -24,7 +24,7 @@ var seckillss = {
         //规划我的交互
 
         init: function (params) {
-            alert("asaa");
+
             var killPhone = $.cookie('killPhone');
             var startTime = params['startTime'];
             var endTime = ['endTime'];

@@ -31,11 +31,12 @@ VALUES
 
 UPDATE seckill
   SET end_time=CASE seckill_id
+      WHEN 1000 THEN '2016-10-11 00:00:00'
       WHEN 1001 THEN '2016-10-11 00:00:00'
       WHEN 1002 THEN '2016-10-11 00:00:00'
       WHEN 1003 THEN '2016-10-11 00:00:00'
       END
-  WHERE seckill_id IN (1001,1002,1003);
+  WHERE seckill_id IN (1000,1001,1002,1003);
 -- 秒杀成功明细表
 -- 用户登录认证相关信息
 CREATE TABLE success_killed(

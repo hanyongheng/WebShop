@@ -73,12 +73,12 @@ public class SeckillController {
      * @return
      */
     //ajax json
-    @RequestMapping(value = "{/{seckillId}/exposer",method = RequestMethod.POST,
+    @RequestMapping(value = "/{seckillId}/exposer",method = RequestMethod.POST,
             //为了规范告诉浏览器或者移动端返回的数据格式是json和具体的字符集
             produces = {"application/json;charset=UTF-8"})
     //告诉spring返回json数据的注解
     @ResponseBody
-    public SeckillResult<Exposer> exposer(Long seckillId){
+    public SeckillResult<Exposer> exposer(@PathVariable Long seckillId){
 
         SeckillResult<Exposer> result;
 
